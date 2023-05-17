@@ -52,5 +52,15 @@ namespace Full_GRASP_And_SOLID
 
             return result;
         }
+        public void ConsolePrint()
+        {
+            IPrinter printer = new ConsolePrinter();
+            printer.PrintRecipe(this);
+        }
+        public void FilePrint()
+        {
+            IPrinter printer = new FilePrinter();
+            printer.PrintRecipe(this);
+        }
     }
 }
